@@ -85,4 +85,9 @@
     background-color: var(--web-primary);
     color: var(--t-white); 
 }
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--t-white) !important; 
+    text-decoration: none;
+    background-color: #ff00d4;
+}
  

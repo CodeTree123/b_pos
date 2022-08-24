@@ -61,7 +61,7 @@
 
     			</div>
     			<div class="form-row">
-    				<input type="submit" class="btn btn-primary" style="float:right;" value="Update Product">
+    				<input type="submit" class="btn bg_p_primary" style="float:right;" value="Update Product">
 
     			</div>
 

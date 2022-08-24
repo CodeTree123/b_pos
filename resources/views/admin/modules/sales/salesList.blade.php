@@ -121,11 +121,11 @@ Sales List- Admin Dashboard
 										<p><b>Record delete confirmation.</b></p>
 										<p>Are you want to really delete ?</p>
 
-										<button class="btn btn-info py-1 del-close" style="background-color: #808080a6;border-color: #808080a6;">Cancel</button>
+										<button class="btn bg_p_primary py-1 del-close" >Cancel</button>
 										<form method="post"  action="{{route('admin.sales.deleteSale')}}"style="float:right;">
 											@csrf
 											<input type="hidden" name="id" value="{{$sale->id}}">
-											<button class="btn bg_p_primary py-1">Confirm</button>
+											<button class="btn bg_secondary_grey py-1">Confirm</button>
 										</form>
 									</div>
 									<script>

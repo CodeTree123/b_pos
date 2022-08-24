@@ -144,7 +144,7 @@ All Products- Admin Dashboard
 										<p><b>Record delete confirmation.</b></p>
 										<p>Are you want to really delete ?</p>
 
-										<button class="btn bg_p_primary py-1 del-close" style="background-color: #808080a6;border-color: #808080a6;">Cancel</button>
+										<button class="btn bg_p_primary py-1 del-close"  >Cancel</button>
 										<form method="post"  action="{{route('admin.product.deleteProduct')}}" style="float:right;">
 											@csrf
 											<input type="hidden" name="id" value="{{$product->id}}">
@@ -184,7 +184,7 @@ All Products- Admin Dashboard
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Add New Product</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body">
 

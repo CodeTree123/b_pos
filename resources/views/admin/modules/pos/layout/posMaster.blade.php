@@ -51,7 +51,7 @@
   .btn-prni {
     border: 1px solid #eee;
     cursor: pointer;
-    height: 115px;
+    height: 170px;
     margin: 0 0 3px 2px;
     padding: 2px;
     width: 10.5%;
@@ -67,7 +67,7 @@
     
   }
   .btn-prni p {
-    display: table-cell;
+    /* display: table-cell; */
     height:30px;
     line-height: 15px;
     vertical-align: middle;
@@ -438,7 +438,7 @@ body{
     <div class="modal-content p-3">
       <div class="modal-header pb-0">
         <h2 class="modal-title pt-3" id="exampleModalLabel">Add Expense</h2>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
       </div>
       <div class="modal-body">
         <form method="post" action="{{route('admin.pos.expenseSave')}}" enctype="multipart/form-data">
@@ -494,7 +494,7 @@ body{
         </div>
         <div class="modal-footer">
 
-         <button type="submit" class="btn btn-primary">Add Expense</button>
+         <button type="submit" class="btn bg_p_primary">Add Expense</button>
        </form>
      </div>
    </div>

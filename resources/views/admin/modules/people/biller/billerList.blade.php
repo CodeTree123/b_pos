@@ -161,7 +161,7 @@ Billers List- Admin Dashboard
 				<div class="modal-footer">
 					
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Add Biller">
+						<input type="submit" class="btn bg_p_primary" value="Add Biller">
 					</div>
 				</form>
 			</div>
@@ -242,7 +242,7 @@ Billers List- Admin Dashboard
 				<div class="modal-footer">
 					
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Update">
+						<input type="submit" class="btn bg_p_primary" value="Update">
 					</div>
 				</form>
 			</div>

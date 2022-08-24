@@ -3,6 +3,10 @@
 POS Module
 @stop
 @section('posContent')
+<?php use App\Http\Controllers\admin\StockController;
+
+
+?>
 
 <script> 
   function dis(val) 
@@ -202,6 +206,9 @@ POS Module
 <div class="col-sm-7 col-md-7 ml-4 rightdiv">
  <div class="product_list pt-3">
    @foreach($allProducts as $products)
+   <?php $counter++;
+  $stock=StockController::stock($products->id);
+  ?>
    <button class="btn-prni btn-default product pos-tip productItem" title="{{$products->name}}" data-pro_id="{{$products->id}}">
     @if(!empty($products->image))
     <img src="{{ asset('/')}}{{$products->image}}" alt="{{$products->name}}" class="img-rounded">
@@ -209,7 +216,8 @@ POS Module
     <img src="{{ asset('/')}}public/admin/defaultIcon/no_image.png" alt="{{$products->name}}" class="img-rounded">
     @endif
     
-    <p class="">{{$products->name}}</p>
+    <p class="">{{$products->name}}</p> 
+    <p class="bg_p_primary py-2 font-weight-bold">{{$stock}}</p>
   </button>
   @endforeach   
 </div>
@@ -263,7 +271,7 @@ POS Module
     <div class="modal-content p-3">
       <div class="modal-header">
         <h2 class="modal-title" id="exampleModalLabel">Add New Customer</h2>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
       </div>
       <div class="modal-body">
 
@@ -309,7 +317,7 @@ POS Module
       <div class="modal-footer">
 
 
-        <input type="submit" class="btn btn-primary" value="Add Customer" id="saveCustomer" style="border-radius: 0px;">
+        <input type="submit" class="btn bg_p_primary" value="Add Customer" id="saveCustomer" style="border-radius: 0px;">
       </form>
 
     </div>
@@ -322,7 +330,7 @@ POS Module
     <div class="modal-content p-3">
       <div class="modal-header">
         <h2 class="modal-title" id="exampleModalLabel">Customer Details</h2>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
       </div>
       <div class="modal-body row" id="customer_details">
 
@@ -426,7 +434,7 @@ POS Module
      <div class="modal-footer">
 
        <div class="form-group">
-        <input type="submit" class="btn btn-primary" value="Add Product">
+        <input type="submit" class="btn bg_p_primary" value="Add Product">
       </div>
     </form>
   </div>
@@ -458,7 +466,7 @@ POS Module
       </div>
       <div class="modal-footer">
 
-        <p class="btn btn-primary tax_add_btn" style="border-radius:0px;cursor:pointer;">Update</p>
+        <p class="btn bg_p_primary tax_add_btn" style="border-radius:0px;cursor:pointer;">Update</p>
       </div>
     </div>
   </div>
@@ -520,8 +528,8 @@ POS Module
     <div class="modal-content p-3">
       <div class="modal-header">
         <h2 class="modal-title" id="exampleModalLabel">Bill Preview</h2>
-        <button type="button" class="btn btn-primary"  onclick="printContent('bill_details')">Print</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg_p_primary"  onclick="printContent('bill_details')">Print</button>
+        <button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
       </div>
       <div class="modal-body" id="bill_details">
 

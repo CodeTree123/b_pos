@@ -34,7 +34,7 @@
     </div>
     <div class="col-4 col-xs-12">
     	<h3 style="float: left;margin-bottom: 0px;font-weight: bold;">Basic Information</h3>
-    	<p class="btn btn-info edit-info upper-action-btn" data-customerId="{{$customerInfo->id}}">Edit</p>
+    	<p class="btn bg_secondary_plum edit-info upper-action-btn" data-customerId="{{$customerInfo->id}}">Edit</p>
     	<hr class="mt-0">
     	<p>Name: {{$customerInfo->name}}</p>
     	<p>Mobile: {{$customerInfo->mobile}}</p>
@@ -47,9 +47,9 @@
     	<!-- <p class="btn btn-info upper-action-btn">Deposit</p>
     	<p class="btn btn-info upper-action-btn">Add Deposit</p> -->
     	@if($currentDue>0)
-    	<p class="btn btn-info upper-action-btn dueReturnBtn">Add Payment</p>
+    	<p class="btn bg_secondary_plum upper-action-btn dueReturnBtn">Add Payment</p>
     	@endif
-    	<p class="btn btn-info upper-action-btn payHisBtn">Payment History</p>
+    	<p class="btn bg_secondary_plum upper-action-btn payHisBtn">Payment History</p>
     	<hr class="mt-0">
     	<div class="col-8">
     	<p>Starting Balance: ৳{{number_format($customerInfo->start_balance)}}</p>
@@ -103,7 +103,7 @@
 								</td>
 								<td style="width:120px;">
 									<div class="dropdown" style="width:90px;float:right;">
-									  <p class="action-btn sale_details" data-salesid="{{$sale->id}}">
+									  <p class="action-btn sale_details bg_p_primary" data-salesid="{{$sale->id}}">
 									   Details
 									  </p>
 									 
@@ -171,7 +171,7 @@
       </div>
       <div class="modal-footer">
         
-         <input type="submit" class="btn btn-primary" value="Return Due">
+         <input type="submit" class="btn bg_p_primary" value="Return Due">
          </form>
       </div>
     </div>

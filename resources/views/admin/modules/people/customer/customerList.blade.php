@@ -136,7 +136,7 @@ a:hover{
     <div class="modal-content p-3">
     	<div class="modal-header">
         <h2 class="modal-title" id="exampleModalLabel">Add New Customer</h2>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
       </div>
        <div class="modal-body">
 
@@ -184,7 +184,7 @@ a:hover{
       </div>
       <div class="modal-footer">
         
-         <input type="submit" class="btn btn-primary" value="Add Customer">
+         <input type="submit" class="btn bg_p_primary" value="Add Customer">
          </form>
       </div>
     </div>

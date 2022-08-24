@@ -81,7 +81,7 @@
          <br>
        </div>
        <div style="text-align: center;">
-         <p class="bill_p" style="font-size: 12px;font-weight: bold;">Pewered By www.codetreebd.com</p>
+         <p class="bill_p" style="font-size: 12px;font-weight: bold;">Powered By CODETREE</p>
        </div>
        @else
        <p>Please select a customer</p>

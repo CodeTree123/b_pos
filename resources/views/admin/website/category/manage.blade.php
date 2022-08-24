@@ -109,7 +109,7 @@ Category
 										<p><b>Record delete confirmation.</b></p>
 										<p>Are you want to really delete ?</p>
 
-										<button class="btn btn-info py-1 del-close" style="background-color: #808080a6;border-color: #808080a6;">Cancel</button>
+										<button class="btn bg_p_primary py-1 del-close"  >Cancel</button>
 										<form method="post"  action="{{route('admin.webcat.deleteCatagory')}}" style="float:right;">
 											@csrf
 											<input type="hidden" name="id" value="{{$web->id}}">
@@ -148,7 +148,7 @@ Category
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Add New Category</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body">
 
@@ -185,7 +185,7 @@ Category
 				<div class="modal-footer">
 
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Add Category">
+						<input type="submit" class="btn bg_p_primary" value="Add Category">
 					</div>
 				</form>
 			</div>
@@ -202,7 +202,7 @@ Category
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Update Product</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body">
 
@@ -245,7 +245,7 @@ Category
 				<div class="modal-footer">
 
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Update">
+						<input type="submit" class="btn bg_p_primary" value="Update">
 					</div>
 				</form>
 			</div>

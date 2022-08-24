@@ -336,7 +336,7 @@ Add Sale- Admin Dashboard
 			</div>
 			<div class="modal-footer">
 
-				<p class="btn btn-primary tax_add_btn" style="border-radius:0px;cursor:pointer;">Update</p>
+				<p class="btn bg_p_primary tax_add_btn" style="border-radius:0px;cursor:pointer;">Update</p>
 			</div>
 		</div>
 	</div>
@@ -347,7 +347,7 @@ Add Sale- Admin Dashboard
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Add Discount</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body">
 
@@ -369,7 +369,7 @@ Add Sale- Admin Dashboard
 			</div>
 			<div class="modal-footer">
 
-				<p type="button" class="btn btn-primary discount_add_btn">Update</p>
+				<p type="button" class="btn bg_p_primary discount_add_btn">Update</p>
 			</div>
 		</div>
 	</div>
@@ -380,7 +380,7 @@ Add Sale- Admin Dashboard
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Product Information</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body" id="product_info">
 

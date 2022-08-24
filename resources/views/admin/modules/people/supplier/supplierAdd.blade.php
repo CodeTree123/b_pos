@@ -100,7 +100,7 @@ Add Supplier- Admin Dashboard
 				    
 
 				    <div class="form-group col-4">
-				    <input type="submit" class="btn btn-primary col-12" value="Save">
+				    <input type="submit" class="btn bg_p_primary col-12" value="Save">
 				  </div>
 				  </div>
 				</form>

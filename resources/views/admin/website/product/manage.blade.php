@@ -117,7 +117,7 @@ Product
 										<p><b>Record delete confirmation.</b></p>
 										<p>Are you want to really delete ?</p>
 
-										<button class="btn bg_p_primary py-1 del-close" style="background-color: #808080a6;border-color: #808080a6;">Cancel</button>
+										<button class="btn bg_p_primary py-1 del-close" >Cancel</button>
 										<form method="post"  action="{{ route('admin.webpro.deleteProduct') }}" style="float:right;">
 											@csrf
 											<input type="hidden" name="id" value="{{$web->id}}">
@@ -225,7 +225,7 @@ Product
 				<div class="modal-footer">
 
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Add Product">
+						<input type="submit" class="btn bg_p_primary" value="Add Product">
 					</div>
 				</form>
 			</div>
@@ -241,7 +241,7 @@ Product
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Website Product Information</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body" id="viewInfo">
 
@@ -260,7 +260,7 @@ Product
 		<div class="modal-content p-3">
 			<div class="modal-header">
 				<h2 class="modal-title" id="exampleModalLabel">Update Product</h2>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn bg_secondary_grey" data-dismiss="modal">Close</button>
 			</div>
 			<div class="modal-body">
 

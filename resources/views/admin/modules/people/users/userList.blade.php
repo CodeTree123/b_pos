@@ -80,7 +80,7 @@ Users List- Admin Dashboard
 									@if($user->status==1)
 									<p class="badge  bg_secondary_teal">Active</p>
 									@else
-									<p class="badge badge-danger">Inactive</p>
+									<p class="badge bg_secondary_grey">Inactive</p>
 									@endif
 								</td>
 								<td style="width:120px;">
@@ -92,11 +92,11 @@ Users List- Admin Dashboard
 										<p><b>Record delete confirmation.</b></p>
 										<p>Are you want to really delete ?</p>
 
-										<button class="btn btn-info py-1 del-close" style="background-color: #808080a6;border-color: #808080a6;">Cancel</button>
+										<button class="btn bg_p_primary py-1 del-close"  >Cancel</button>
 										<form method="post"  action="{{route('admin.people.deleteUser')}}" style="float:right;">
 											@csrf
 											<input type="hidden" name="id" value="{{$user->id}}">
-											<button type="submit" class="btn btn-danger py-1">Confirm</button>
+											<button type="submit" class="btn bg_secondary_grey py-1">Confirm</button>
 										</form>
 									</div>
 									<script>
@@ -111,7 +111,7 @@ Users List- Admin Dashboard
 											});
 										});
 									</script>
-									<p class="btn btn-danger mb-0 p-1 px-2 del-btn <?php echo 'btn'.$counter?>" style="font-size: 13px;relative;cursor:pointer;" title="Delete user"> <i class="fa fa-trash"></i></p>
+									<p class="btn bg_secondary_grey mb-0 p-1 px-2 del-btn <?php echo 'btn'.$counter?>" style="font-size: 13px;relative;cursor:pointer;" title="Delete user"> <i class="fa fa-trash"></i></p>
 							    </td>
 							</tr>
 							@endforeach
@@ -174,7 +174,7 @@ Users List- Admin Dashboard
       </div>
       <div class="modal-footer">
         
-        <input type="submit" class="btn btn-primary" value="Add New User">
+        <input type="submit" class="btn bg_p_primary" value="Add New User">
         </form>
       </div>
     </div>
@@ -243,7 +243,7 @@ Users List- Admin Dashboard
       </div>
       <div class="modal-footer">
         
-        <input type="submit" class="btn btn-primary" value="Update">
+        <input type="submit" class="btn bg_p_primary" value="Update">
         </form>
       </div>
     </div>

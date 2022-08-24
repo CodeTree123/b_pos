@@ -65,20 +65,20 @@ Print barcode- Admin Dashboard
 							</div>
                            <div class="form-group col-md-12">
                               <div class="form-check form-check-inline">
-							  <input class="form-check-input" type="checkbox" name="siteName" value="siteName">
-							  <label class="form-check-label" for="inlineCheckbox1">Site Name</label>
+							  <input class="form-check-input" type="checkbox" id="site_name"  name="siteName" value="siteName">
+							  <label class="form-check-label" for="site_name">Site Name</label>
 							</div>
 							<div class="form-check form-check-inline">
-							  <input class="form-check-input" type="checkbox" name="productname" value="productName">
-							  <label class="form-check-label" for="inlineCheckbox1">Product Name</label>
+							  <input class="form-check-input" type="checkbox" id="product_name" name="productname" value="productName">
+							  <label class="form-check-label" for="product_name">Product Name</label>
 							</div>
 							<div class="form-check form-check-inline">
-							  <input class="form-check-input" type="checkbox" name="sellPrice" value="sellPrice">
-							  <label class="form-check-label" for="inlineCheckbox1">Sell Price</label>
+							  <input class="form-check-input" type="checkbox" id="sell_price" name="sellPrice" value="sellPrice">
+							  <label class="form-check-label" for="sell_price">Sell Price</label>
 							</div>
 							<div class="form-check form-check-inline">
-							  <input class="form-check-input" type="checkbox" name="label" value="label">
-							  <label class="form-check-label" for="inlineCheckbox1">Label</label>
+							  <input class="form-check-input" type="checkbox" id="label" name="label" value="label">
+							  <label class="form-check-label" for="label">Label</label>
 							</div>
 						  </div>
 
